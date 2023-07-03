@@ -1,0 +1,84 @@
+.introduction{
+    max-width: 1200px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 150px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
+.introduction img{
+    border-radius: 100%;
+    border: 1px solid #dfdfdf;
+    box-shadow: 5px 1px 12px black;
+    height: auto; 
+    display: block;   
+}
+.introduction h1{
+    font-size: 80px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.introduction span{
+    font-size: 25px;
+    color: #5a5959;
+}
+/* - */
+@media(max-width: 999px){
+    .introduction{
+        grid-template-columns: 1fr 1fr;
+    }
+    .introduction h1{
+        font-size: 60px;
+    }
+    
+    .introduction  span{
+        font-size: 20px;    
+    }
+}
+@media(max-width: 870px){
+    .introduction h1{
+        font-size: 50px;
+    }
+}
+@media(max-width: 799px){
+    .introduction{
+        gap: 70px;
+    }
+    .introduction h1{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .introduction span{
+        font-size: 18px;
+    }
+}
+@media (max-width: 699px){
+    .introduction{
+        grid-template-columns: 1fr;
+    }
+    .introduction img{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .introduction h1{
+        font-size: 60px;
+    }
+    .introduction span{
+        font-size: 20px;
+    }
+}
+@media (max-width: 499px){
+    .introduction img{
+        max-width: 80%;
+    }
+    .introduction h1{
+        font-size: 55px;
+    }
+    .introduction span{
+        font-size: 18px;
+    }
+}

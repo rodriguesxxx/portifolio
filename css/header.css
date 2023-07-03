@@ -1,0 +1,82 @@
+header{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 480;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: typing 5s steps(7, end), blink-caret 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #000;
+    max-width: 150px;
+}
+@keyframes typing {
+    0% { width: 0; }
+    14.2857% { width: 20%; }
+    28.5714% { width: 40%; }
+    42.8571% { width: 60%; }
+    57.1429% { width: 80%; }
+    71.4286% { width: 100%; }
+    85.7143% { width: 80%; }
+    100% { width: 100%; }
+  }
+  
+  @keyframes blink-caret {
+    50% { border-color: transparent; }
+  }
+
+.header-menu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.header-menu a{
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 10px 20px;
+    display: block;
+}
+
+.header-menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.5s ease-in-out;
+}
+
+.header-menu a:hover::after {
+    width: 100%;
+}
+
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+    }
+    .header-menu{
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .header-menu li{
+        background-color: #f6f5f5;
+        transition: background 0.3s;
+    }
+    .header-menu li:hover{
+        background-color: #e6e4e4;
+    }
+    .header-menu a:hover::after {
+        width: 0;
+    }
+    
+}

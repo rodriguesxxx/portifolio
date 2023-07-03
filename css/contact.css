@@ -1,0 +1,64 @@
+.contact-container{
+    background-color: #000;
+    color: #fff;
+}
+.contact{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 20px;
+    position: relative;
+}
+.contact-logo{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 480;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contact-text{
+    color: #d1d1d1;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    max-width: 40ch;
+}
+.footer{
+    color: #a3a3a3;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 4px;
+}
+
+.social-icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.social-icons a{
+    color: #fff;
+    padding: 10px 20px;
+    transition: color 0.7s;
+}
+
+.social-icons .linkedin:hover{
+    color: #1d1db6;
+}
+.social-icons .instagram:hover{
+    color: #d01858;
+}
+.social-icons .google:hover{
+    color: #218321;
+}
+@media(max-width: 670px){
+    .social-icons{
+        flex-direction: column;
+    }
+    .social-icons li{
+        margin-bottom: 20px;
+    }
+}

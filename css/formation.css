@@ -1,0 +1,159 @@
+.formation-container{
+    background-color: #141414;
+    color: #ffffff;
+}
+.formation{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+.formation-subtitle{
+    color: #000;
+    font-size: 140px;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch;
+}
+.formation-intro{
+    font-size: 22px;
+    margin-bottom: 60px;
+    max-width: 40ch;
+}
+
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.course-info{
+    background-color: #000;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius:5px;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+.course-info::after{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 22px;
+    background: linear-gradient(#469bf1,#0a50dd);
+    position: absolute;
+    top: 50px;
+    left: -4px;
+}
+.course-info:hover{
+    box-shadow: 0 0 17px rgba(180, 180, 180, 0.5);
+
+}
+.course-level{
+    margin-bottom: 15px;
+    color: #a3a3a3;
+    font-size: 15px;
+}
+
+.course-name{
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.course-certificate{
+    margin-bottom: 40px;
+
+}
+.course-certificate a{
+    color: rgb(81, 81, 131);
+    text-decoration:underline;
+    transition: color 0.3s;
+}
+.course-certificate a:hover{
+    color: rgb(40, 40, 55);
+
+}
+
+.course-scholl{
+    color: #a3a3a3;
+    font-size: 15px; 
+}
+
+.intensive-courses{
+    margin-top: 40px;
+    position: relative;
+}
+
+.intensive-courses img{
+    width: 25px;
+    position: absolute;
+    left: -32px;
+    top: -5px;
+}
+.intensive-courses h3{
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #a3a3a3;
+    position: relative;
+}
+
+.intensive-courses a{
+    color: white;
+}
+
+.intensive-courses li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.intensive-courses li a{
+    border-bottom: 1px solid #a3a3a3;
+    font-size: 18px;
+    transition: color 1s;
+    transition: border-color 0.5s;
+}
+.intensive-courses li a:hover{
+    color: #a3a3a3;
+    border-color: transparent;
+}
+.intensive-courses li span{
+    color: #a3a3a3;
+    font-size: 16px;
+}
+
+.books{
+    margin-top: 60px;
+}
+.books li{
+    justify-content: start;
+}
+.books li span{
+    margin-left: 5px;
+    font-size: 20px;
+}
+@media (max-width: 800px){
+    .formation{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .formation-subtitle{
+        max-width: initial!important;
+        color: #fff;
+        font-size: 50px;
+        text-transform: capitalize;
+
+    }
+    .intensive-courses{
+        margin-top: 60px;
+    }
+    .intensive-courses img{
+        top: -35px;
+        left: 3px;
+        width: 30px;
+    }
+}
