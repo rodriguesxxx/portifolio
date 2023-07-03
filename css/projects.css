@@ -55,6 +55,15 @@
     padding: 0px;
     font-size: 20px;
 }
+.project-title a{
+    border-bottom: 1.9px solid #141414;
+    transition: color 0.8s;
+    transition: border-color 0.5s;
+}
+.project-title a:hover{
+    color: #303030e4;
+    border-color: transparent;
+}
 .project-desc{
     color: #525252;
     padding: 0px;
