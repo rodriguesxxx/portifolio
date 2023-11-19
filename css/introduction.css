@@ -12,7 +12,7 @@
 .introduction img{
     border-radius: 100%;
     border: 1px solid #dfdfdf;
-    box-shadow: 5px 1px 12px black;
+    box-shadow: 5px 1px 5px black;
     height: auto; 
     display: block;   
 }
