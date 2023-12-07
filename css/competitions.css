@@ -1,0 +1,105 @@
+.competitions-container{
+    background-color: #ffffff;
+    color: #343434;
+}
+.competitions{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 180px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+.competitions-subtitle{
+    color: #d1d1d1;
+    font-size: 140px;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch;
+}
+.competitions-intro{
+    font-size: 22px;
+    margin-bottom: 60px;
+    max-width: 40ch;
+}
+
+.competitions-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.competition-info{
+    background-color: #f5f5f5;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius:5px;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+.competition-info::after{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 22px;
+    background: linear-gradient(#469bf1,#0a50dd);
+    position: absolute;
+    top: 50px;
+    left: -4px;
+}
+.competition-info:hover{
+    box-shadow: 0 0 17px rgba(180, 180, 180, 0.5);
+
+}
+.competition-level{
+    margin-bottom: 15px;
+    color: #a3a3a3;
+    font-size: 15px;
+}
+
+.competition-name{
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.competition-certificate{
+    margin-bottom: 40px;
+
+}
+.competition-certificate a{
+    color: rgb(81, 81, 131);
+    text-decoration:underline;
+    transition: color 0.3s;
+}
+.competition-certificate a:hover{
+    color: rgb(40, 40, 55);
+
+}
+
+.competition-age{
+    color: #a3a3a3;
+    font-size: 15px; 
+}
+@media (max-width: 800px){
+    .competitions{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .competitions-subtitle{
+        max-width: initial!important;
+        color: #000;
+        font-size: 50px;
+        text-transform: capitalize;
+
+    }
+    .intensive-competitions{
+        margin-top: 60px;
+    }
+    .intensive-competitions img{
+        top: -35px;
+        left: 3px;
+        width: 30px;
+    }
+}

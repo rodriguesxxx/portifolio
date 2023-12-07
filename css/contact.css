@@ -7,7 +7,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 120px 20px;
+    padding: 230px 20px;
     position: relative;
 }
 .contact-logo{
